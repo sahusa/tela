@@ -1,0 +1,134 @@
+body{
+    margin: 0 auto;
+    font-family: sans-serif;    
+}
+
+
+.header-g{
+    position: fixed;
+    top: 0;
+    padding: 1%;
+    width: 100%;
+    border-bottom: 1px solid hsl(203, 100%, 25%);
+    background-color: white;
+    z-index: 1;
+}
+
+/*Menu lateral*/
+
+.menu-left{
+    width: 17%;
+    position: fixed;
+    top: 90px;
+    left: -50px;
+    text-align: center;
+    border-right: 1px solid hsl(203, 100%, 25%);
+    box-sizing: border-box;
+    
+}
+
+.menu-left ul{
+    list-style: none;
+/*    border: 1px solid black;*/
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.menu-left li{
+    display: inline-block;
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(203, 100%, 25%);
+}
+
+.menu-left li a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 1em;
+}
+
+.menu-left a:hover{
+    color: hsl(203, 100%, 25%);
+}
+
+.menu-left span{
+    width: 100%;
+    font-size: 1em;
+}
+
+
+
+/*Área central*/
+
+.main{
+    width: 80%;
+    margin-left: 14%;
+    margin-top: 7%;     
+    padding: 1.5em;
+    height: 500px;
+    font-weight: bold;
+    color: hsl(203, 8%, 60%);
+    box-sizing: border-box;
+}
+
+.main h2{
+    margin: 0;
+    font-size: 1.2em;
+    display: inline-block;
+    float: left;
+    padding: 0 1rem .7rem 0;
+    
+}
+
+.main p{
+    margin: 0;
+    font-size: 0.7em;    
+    padding: .3em .5em .7em .7em;
+}
+
+.main-header{
+    box-shadow: 0 1px .2px -.1px black;
+/*    border-bottom: 1px solid black;*/
+}
+
+
+
+/*Tabelas*/
+
+.main-table{
+    width: 100%;
+    min-width: 800px;
+    box-shadow: 0 0 3px 2px hsl(203, 8%, 60%, .3);
+}
+
+.main-table h3{
+    padding: 5px 0 0 10px;
+    margin-bottom: 0px;
+}
+
+.main-table h6{
+    padding: 5px 0 0 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+
+.table-basic{    
+    clear: both;
+    width: 98%;
+    margin: 0 10px 0 10px;
+    border-collapse: collapse;
+}
+
+.table-basic th{
+    text-align: left;
+}
+
+.table-basic td, th{
+    padding: 1em;
+    border-top: 1px solid hsl(203, 15%, 61%);
+    
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Página teste</title>
+    
+    <link rel="stylesheet" href="estilo/style.css">
+    
+    <!-- css iconmoon    -->
+    <link rel="stylesheet" href="images/style.css">
+    
+    <!-- normalize   -->
+    <link rel="stylesheet" href="estilo/normalize.css">
+    
+    <meta name="viewport" content="width=device-width">
+    
+
+</head>    
+
+<body>
+    <div class="header-g">
+        <img src="images/letra-g-png-6.png">
+    </div>
+    
+    <!--    Menu Lateral    -->
+    <div class="menu-left">
+        <ul>
+            <li><a href="#"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
+            <li><a href="#"> <span class="icon-book"></span> <br> Lançamentos</a></li>
+            <li><a href="#"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
+            <li><a href="#"> <span class="icon-display"></span> <br> Categorias</a></li>
+            <li><a href="#"> <span class="icon-users"></span> <br> Funcionários</a></li>
+            <li><a href="#"> <span class="icon-file-text2"></span> <br> Relatórios </a></li> 
+        </ul>       
+    </div>
+    
+    <div class="main">
+        
+        <div class="main-header">
+            <h2> Lançamento </h2>
+            <p>Financeiro | Lançamento</p>
+        </div>
+        
+        <div class="main-table">
+            <h3>Cadastro</h3>
+            <form action="#" method="post">
+                <div>
+                    <label for="data">Data de Cadastro</label>
+                    <input type="date" name="data" id="data">
+
+                    <label for="resultado">Centro de Resultado</label>
+                    <input type="email" name="resultado" id="resultado">
+
+                    <label for="funcionario">Funcionário</label>
+                    <input type="text" name="funcionario" id="funcionario">
+
+                    <label for="vencimento">Vencimento</label>
+                    <input type="date" name="vencimento" id="vencimento">
+                </div>
+                
+                <div>
+                <label for="categoria">Categoria</label>
+                <input type="text" name="categoria" id="categoria">
+                
+                <label for="descricao">Descrição</label>
+                <input type="tel" name="descricao" id="descricao">
+                
+                <label for="valor">Valor Devido</label>
+                <input type="number">
+                
+                <label><input type="checkbox" name="pago" value="1">Pago</label>
+                </div>
+                
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+    
+    </div>
+   
+    
+</body>
+</html>
