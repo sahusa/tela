@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="estilo/normalize.css">
     
     <style>
-        ul{
-            
-            border: 1px solid black;
-            list-style-position: inside;
-        }
-        
-        ul li{
-            border: 1px solid black;
-            width: 100%;
-            
-        }
-        
+     div.parent {
+width: 200px;
+border-width: 1px;
+border-style: solid;
+border-left-color: blue;
+}
+
+div.child {
+width: 200px;
+padding: 10px;
+border-width: 1px;
+border-style: solid;
+border-bottom-color: red;
+}
         
     </style>
     
@@ -31,15 +33,11 @@
 </head>    
 
 <body>
-    
-    <ul>
-        <li>teste</li>
-        <li>testado</li>
-        <li>atestado</li>
-        <li>garatoaprovado teste</li>
-    </ul>   
-    
-    
+ <div class="parent">
+<div class="child">
+Your content will appear correctly.
+</div>
+</div>
     
 </body>
 </html>

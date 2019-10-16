@@ -18,17 +18,17 @@
 
 <body>
     <div class="header-g">
-        <img src="images/letra-g-png-6.png">
+        <a href="cadastro.html"><img src="images/letra-g-png-6.png"></a>
     </div>
     
     <!--    Menu Lateral    -->
     <div class="menu-left">
         <ul>
-            <li><a href="#"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
-            <li><a href="#"> <span class="icon-book"></span> <br> Lançamentos</a></li>
-            <li><a href="#"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
-            <li><a href="#"> <span class="icon-display"></span> <br> Categorias</a></li>
-            <li><a href="#"> <span class="icon-users"></span> <br> Funcionários</a></li>
+            <li><a href="index.html"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
+            <li><a href="tab2.html"> <span class="icon-book"></span> <br> Lançamentos</a></li>
+            <li><a href="tab3.html"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
+            <li><a href="tab4.html"> <span class="icon-display"></span> <br> Categorias</a></li>
+            <li><a href="tab5.html"> <span class="icon-users"></span> <br> Funcionários</a></li>
             <li><a href="#"> <span class="icon-file-text2"></span> <br> Relatórios </a></li> 
         </ul>       
     </div>
@@ -43,34 +43,40 @@
         <div class="main-table">
             <h3>Cadastro</h3>
             <form action="#" method="post">
-                <div>
+                
+                <div class="full-form main-table-shadow">
+                <div class="col-2">
                     <label for="data">Data de Cadastro</label>
                     <input type="date" name="data" id="data">
 
                     <label for="resultado">Centro de Resultado</label>
-                    <input type="email" name="resultado" id="resultado">
+                    <input placeholder="Digite seu Email" type="email" name="resultado" id="resultado">
 
                     <label for="funcionario">Funcionário</label>
-                    <input type="text" name="funcionario" id="funcionario">
+                    <input placeholder="Registro" type="text" name="funcionario" id="funcionario">
 
                     <label for="vencimento">Vencimento</label>
                     <input type="date" name="vencimento" id="vencimento">
                 </div>
                 
-                <div>
-                <label for="categoria">Categoria</label>
-                <input type="text" name="categoria" id="categoria">
-                
-                <label for="descricao">Descrição</label>
-                <input type="tel" name="descricao" id="descricao">
-                
-                <label for="valor">Valor Devido</label>
-                <input type="number">
-                
-                <label><input type="checkbox" name="pago" value="1">Pago</label>
+                <div class="col-2">
+                    <label for="categoria">Categoria</label>
+                    <input placeholder="Digite seu último nome" type="text" name="categoria" id="categoria">
+
+                    <label for="descricao">Descrição</label>
+                    <input placeholder="Seu telefone" type="tel" name="descricao" id="descricao">
+
+                    <label for="valor">Valor Devido</label>
+                    <input placeholder="R$ 9.999,99" type="number">
+                    <label><input type="checkbox" name="pago" value="1">Pago</label>
                 </div>
                 
-                <input type="submit" value="enviar">
+                <input type="submit" value="Enviar">
+                
+                </div>
+                
+                
+                
             </form>
         </div>
     

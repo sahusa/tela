@@ -18,16 +18,16 @@
 
 <body>
     <div class="header-g">
-        <img src="images/letra-g-png-6.png">
+        <a href="cadastro.html"><img src="images/letra-g-png-6.png"></a>
     </div>
     
     <!--    Menu Lateral    -->
     <div class="menu-left">
         <ul>
-            <li><a href="#"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
-            <li><a href="#"> <span class="icon-book"></span> <br> Lançamentos</a></li>
-            <li><a href="#"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
-            <li><a href="#"> <span class="icon-display"></span> <br> Categorias</a></li>
+            <li><a href="index.html"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
+            <li><a href="tab2.html"> <span class="icon-book"></span> <br> Lançamentos</a></li>
+            <li><a href="tab3.html"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
+            <li><a href="tab4.html"> <span class="icon-display"></span> <br> Categorias</a></li>
             <li><a href="#"> <span class="icon-users"></span> <br> Funcionários</a></li>
             <li><a href="#"> <span class="icon-file-text2"></span> <br> Relatórios </a></li> 
         </ul>       
@@ -41,23 +41,40 @@
         </div>
         
         <div class="main-table">
-            <h3>Remover isso aqui e border-bottom</h3>
-            
-            <table class="table-basic">
-                <thead>
-                    <tr>
-                        <th>#</th> <th>Janeiro</th> <th>Fevereiro</th> <th>Março</th> <th>Abril</th> <th>Maio</th> <th>Junho</th> <th>Julho</th> <th>Agosto</th> <th>Setembro</th> <th>Outubro</th> <th>Novembro</th> <th>Dezembro</th>
-                    </tr>            
+            <table class="table-basic table-3">
+                
+                    <thead>
+                    <div class="teste-te">
+                        <tr>
+                            <th>Data de Transação</th> <th>Categoria</th> <th>Descrição</th> <th>Funcionário</th> <th>Centro de Custo</th> <th>Valor</th> <th>Status de Pagamento</th>
+                        </tr>
+                    </div>
                 </thead> 
+                <div class="teste-te"></div>
                 <tbody>
+                    <tr class="border-top">
+                        <td>02/01/2018</td> <td>Taxi</td>  <td>Hotel Santos - Teconfri Cubatão</td> <td>Funcionário 1</td> <td>Centro de Custo 1</td> <td>R$ 80,00</td><td class="td-pago">Pago</td>
+                    </tr>
+                     <tr>
+                        <td>02/01/2018</td> <td>Almoço</td>  <td>Shopping</td> <td>Funcionário 1</td> <td>Centro de Custo 2</td> <td>R$ 150,00</td><td class="td-pago">Pago</td>
+                    </tr>
+                     <tr>
+                        <td>11/01/2018</td> <td>Almoço</td>  <td>Shopping</td> <td>Funcionário 1</td> <td>Centro de Custo 3</td> <td>R$ 50,00</td><td class="td-pago">Pago</td>
+                    </tr>
                     <tr>
-                        <td>Reembolsos Pagos</td> <td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td> 
+                        <td>15/01/2018</td> <td>Hospedagem</td>  <td>Hotel Santos</td> <td>Funcionário 1</td> <td>Centro de Custo 4</td> <td>R$ 400,00</td><td class="td-nao-pago">Não Pago</td>
                     </tr>
-                     <tr>
-                        <td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td>
+                    <tr>
+                        <td>21/01/2018</td> <td>Compras para projeto</td>  <td>Materiais de Escritório</td> <td>Funcionário 1</td> <td>Centro de Custo 5</td> <td>R$ 20,00</td><td class="td-pago">Pago</td>
                     </tr>
-                     <tr>
-                        <td>Total</td> <td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td><td>R$ 600,00</td>
+                    <tr>
+                        <td>22/01/2018</td> <td>Lanche</td>  <td>Padaria</td> <td>Funcionário 1</td> <td>Centro de Custo 6</td> <td>R$ 20,00</td><td class="td-nao-pago">Não Pago</td>
+                    </tr>
+                    <tr>
+                        <td>26/01/2018</td> <td>Passagem de avião</td>  <td>São Paulo - Rio de Janeiro</td> <td>Funcionário 1</td> <td>Centro de Custo 7</td> <td>R$ 300,00</td><td class="td-pago">Pago</td>
+                    </tr>
+                    <tr>
+                        <td>31/01/2018</td> <td>Jantar com Cliente</td>  <td>Vento Aragano</td> <td>Funcionário 1</td> <td>Centro de Custo 8</td> <td>R$ 130,00</td><td class="td-nao-pago">Não Pago</td>
                     </tr>
                 </tbody>
             </table>

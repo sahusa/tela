@@ -3,13 +3,15 @@
 <head>
     <title>Página teste</title>
     
-    <link rel="stylesheet" href="estilo/style.css">
-    
+        
     <!-- css iconmoon    -->
     <link rel="stylesheet" href="images/style.css">
     
     <!-- normalize   -->
     <link rel="stylesheet" href="estilo/normalize.css">
+    
+    <!-- meu estilo css   -->
+    <link rel="stylesheet" href="estilo/style.css">
     
     <meta name="viewport" content="width=device-width">
     
@@ -18,18 +20,18 @@
 
 <body>
     <div class="header-g">
-        <img src="images/letra-g-png-6.png">
+        <a href="cadastro.html"><img src="images/letra-g-png-6.png"></a>
     </div>
     
     <!--    Menu Lateral    -->
     <div class="menu-left">
         <ul>
-            <li><a href="#"> <span class="icon-equalizer"></span> <br> Dashboard</a></li>
-            <li><a href="#"> <span class="icon-book"></span> <br> Lançamentos</a></li>
-            <li><a href="#"> <span class="icon-briefcase"></span> <br> Centro de Resultado </a></li>
-            <li><a href="#"> <span class="icon-display"></span> <br> Categorias</a></li>
-            <li><a href="#"> <span class="icon-users"></span> <br> Funcionários</a></li>
-            <li><a href="#"> <span class="icon-file-text2"></span> <br> Relatórios </a></li> 
+            <li><a href="index.html"><span class="icon-equalizer"></span><br> <div class="teste-teste">Dashboard</div></a></li>
+            <li><a href="tab2.html"><span class="icon-book"></span><br> Lançamentos</a></li>
+            <li><a href="tab3.html"><span class="icon-briefcase"></span><br> Centro de <br> Resultado </a></li>
+            <li><a href="tab4.html"><span class="icon-display"></span><br> Categorias</a></li>
+            <li><a href="#"><span class="icon-users"></span><br> Funcionários</a></li>
+            <li><a href="#"><span class="icon-file-text2"></span><br> Relatórios </a></li> 
         </ul>       
     </div>
     
@@ -40,7 +42,7 @@
             <p>Financeiro | Lançamento</p>
         </div>
         
-        <div class="main-table">
+        <div class="main-table main-table-shadow">
             <h3>Basic Table</h3>
             <h6>Due to the widespread use of tables across third-party</h6>
             <table class="table-basic">
@@ -51,13 +53,13 @@
                 </thead> 
                 <tbody>
                     <tr>
-                        <td>1</td> <td>Smith Doe</td> <td><img src="#"></td> <td>Smith@gmail.com</td> <td>Active</td> <td><img src="#"></td>
+                        <td>1</td> <td>Smith Doe</td> <td><img class="avatar" src="images/_avatar.jpg"></td> <td>Smith@gmail.com</td> <td><div class="status-active">Active</div></td><td><span class="icon-checkmark icon-add"></span><span class="icon-cross icon-del"></span></td>
                     </tr>
                      <tr>
-                        <td>2</td> <td>John Doe</td> <td><img src="#"></td> <td>John@gmail.com</td> <td>Active</td> <td><img src="#"></td>
+                        <td>2</td> <td>John Doe</td> <td><img class="avatar" src="images/_avatar.jpg"></td> <td>John@gmail.com</td> <td><div class="status-pending">Pending</div></td> <td><span class="icon-checkmark icon-add"></span><span class="icon-cross icon-del"></span></td>
                     </tr>
                      <tr>
-                        <td>3</td> <td>Alex No Doe</td> <td><img src="#"></td> <td>Otto@gmail.com</td> <td>Active</td> <td><img src="#"></td>
+                        <td>3</td> <td>Alex No Doe</td> <td><img class="avatar" src="images/_avatar.jpg"></td> <td>Otto@gmail.com</td> <td><div class="status-not-active">Not Active</div></td> <td><span class="icon-checkmark icon-add"></span><span class="icon-cross icon-del"></span></td>
                     </tr>
                 </tbody>
             </table>
