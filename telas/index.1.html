@@ -1,43 +1,90 @@
-<!doctype html>
 <html>
 <head>
-    <title>Página teste</title>
     
-    <link rel="stylesheet" href="estilo/style.css">
-    
-    <!-- css iconmoon    -->
-    <link rel="stylesheet" href="images/style.css">
-    
-    <!-- normalize   -->
-    <link rel="stylesheet" href="estilo/normalize.css">
-    
-    <style>
-     div.parent {
-width: 200px;
-border-width: 1px;
-border-style: solid;
-border-left-color: blue;
+</head>
+<body style="width: 700px; margin: 0 auto; background-color: green; height: 500px; display: block;">
+
+    <div style="width: 50%;">
+                <!-- Styles -->
+<style>
+#chartdiv {
+  width: 140%;
+  height: 140px;
 }
 
-div.child {
-width: 200px;
-padding: 10px;
-border-width: 1px;
-border-style: solid;
-border-bottom-color: red;
+</style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/4/core.js"></script>
+<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+<!-- Chart code -->
+<script>
+am4core.ready(function() {
+
+// Themes begin
+am4core.useTheme(am4themes_animated);
+// Themes end
+
+/**
+ * Define data for each year
+ */
+var chartData = {
+  "1995": [
+    { "sector": "Brasil", "size": 6.6 },
+    { "sector": "Mining and Quarrying", "size": 0.6 },
+    { "sector": "USA", "size": 23.2 },
+    { "sector": "India", "size": 2.2 },
+  ]
+  
+};
+
+// Create chart instance
+var chart = am4core.create("chartdiv", am4charts.PieChart);
+
+// Add data
+chart.data = [
+  { "sector": "Brasil", "size": 6.6 },
+  { "sector": "UK", "size": 0.6 },
+  { "sector": "USA", "size": 23.2 },
+  { "sector": "India", "size": 2.2 },
+];
+
+// Add label
+chart.innerRadius = 0;
+var label = chart.seriesContainer.createChild(am4core.Label);
+label.text = "1995";
+label.horizontalCenter = "middle";
+label.verticalCenter = "middle";
+label.fontSize = 20;
+
+// Add and configure Series
+var pieSeries = chart.series.push(new am4charts.PieSeries());
+pieSeries.dataFields.value = "size";
+pieSeries.dataFields.category = "sector";
+
+// Animate chart data
+function loop() {
+  //chart.allLabels[0].text = currentYear;
+  var data = getCurrentData();
+  for(var i = 0; i < data.length; i++) {
+    chart.data[i].size = data[i].size;
+  }
+  chart.invalidateRawData();
+  chart.setTimeout( loop, 4000 );
 }
-        
-    </style>
-    
 
-</head>    
+loop();
 
-<body>
- <div class="parent">
-<div class="child">
-Your content will appear correctly.
+}); // end am4core.ready()
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>
+                
 </div>
-</div>
-    
+           
+
 </body>
 </html>

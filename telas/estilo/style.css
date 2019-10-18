@@ -24,8 +24,8 @@ body{
 .menu-left{
     width: 15vw;
     position: fixed;
-    top: 90px;
-    left: -20px;
+    top: 80px;
+    left: -70px;
     text-align: center;
 /*    border-right: 1px solid hsl(203, 3%, 44%);*/
     box-sizing: border-box;
@@ -41,33 +41,43 @@ body{
     display: inline-block;
     float: left;
     width: 100%;
-    margin: 10px 0px;
+    margin: 10px 0px 10px 40px;
     padding-bottom: 10px;
-    border-bottom: 1px solid hsl(203, 3%, 44%);
+    border-bottom: 1px solid hsl(203, 3%, 44%);    
 }
 
 .menu-left li a{
+    display: flex;
     text-decoration: none;
     color: darkgray;
     font-size: 1em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-left li a .ico-moon{
+    margin-bottom: 5px;
+}
+
+
+.menu-left li a .ico-moon, .ico-letras{
+/*    color: red;*/
+    margin-right: 50px;
 }
 
 .menu-left a:hover{
     color: hsl(203, 100%, 25%);
 }
 
-.menu-left span{
-    width: 100%;
-    font-size: 1em;
-}
 
 /*ícones menu lateral*/
-..menu-left ul li{
-    font-size: 15px;
+.menu-left ul li{
+    font-size: 14px;
 }
 
-.menu-left ul li a span{
+.menu-left ul li a .ico-moon{
     font-size: 25px;
+/*    color: red;*/
 }
 
 
@@ -75,11 +85,11 @@ body{
 /*Área central*/
 
 .main{
-    width: 80vw;
-    margin-left: 12.5vw;
+    width: 90vw;
+    margin-left: 8.5vw;
     margin-top: 6vw;     
     padding: 1.5em;
-    height: 500px;
+    height: 1000px;
     font-weight: bold;
     color: hsl(203, 8%, 60%);
     background-color: white;
@@ -127,6 +137,7 @@ body{
 .main-table h3{
     padding: 5px 0 0 10px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .main-table h6{
@@ -355,7 +366,7 @@ body{
     border-top: 4px solid black;
 }
 
-/* Formulário */
+/* Formulário - cadastro */
 
 .full-form{
     padding: 10px;
@@ -366,6 +377,7 @@ input, label{
     width: 100%;
     border-radius: 5px;
     box-sizing: border-box;
+    padding: 3px;
 }
 
 label{
@@ -374,11 +386,14 @@ label{
 
 input{
     background-color: #d6d3d3;
-    border: 1px solid #a39f9f;
+    border: 3px solid transparent;
+    box-shadow: 0px 0px 3px 1px #7e7c7c;
 }
 
 input:focus{
     background-color: darkgray;
+    border: 3px solid rebeccapurple;
+    outline: none;
 }
 
 .col-2{
@@ -389,24 +404,73 @@ input:focus{
     margin: 1%;
 }
 
+/*  Botão enviar  */
 input[type="submit"]{
     width: 70px;
     display: inline-block;
     float: left;
     clear: both;
     margin-left: 10px;
+    margin-bottom: 10px;
     background-color: rebeccapurple;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
     box-shadow: 4px 3px 10px black;
-    transition: all .5s;
+    transition: all .2s;
 }
 
 input[type="submit"]:hover{
     box-shadow: 1px 1px 5px black;
 }
+
+/* Edição do checkbox */
+input[type="checkbox"]{
+    width: 20px;
+    margin-top: 40px;
+    opacity: 0;
+}
+
+label .check-in{
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    background-color: #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+label .check-in:before{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 18px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 2px 2px 3px black; 
+    margin-top: -3px;
+    transition: transform .2s cubic-bezier(.44,-0.68,.69,1.67);
+    transition: background .5s;
+    cursor: pointer;
+}
+
+label input:checked + .check-in:before{
+    transform: translateX(20px);
+}
+
+label input:checked + .check-in{
+    background-color: green;
+}
+
+/* Para acessibilidade */
+/*
+label input:focus + .check-in{
+    border: 2px solid rebeccapurple;
+}
+*/
+
 
 
 

@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+    <title>Página teste</title>
+    
+        
+    <!-- css iconmoon    -->
+    <link rel="stylesheet" href="images/style.css">
+    
+    <!-- normalize   -->
+    <link rel="stylesheet" href="estilo/normalize.css">
+    
+    <!-- meu estilo css   -->
+    <link rel="stylesheet" href="estilo/style.css">
+    
+    <meta name="viewport" content="width=device-width">
+    
+    <style>
+        
+        .grid-dash{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(3, auto);
+            grid-gap: 8px;
+        }
+        
+        .card-1, card-2, card-3, card-4{
+            grid-row: 1 / 2;                
+        }
+        
+        .card-1{
+            grid-column: 1 / 2;
+        }
+        
+        .card-2{
+            grid-column: 2 / 3;
+        }
+        
+        .card-3{
+            grid-column: 3 / 5;
+        }
+        
+        .card-4{
+            grid-column: 5 / 7;
+        }
+        
+        .card-5{
+            grid-column: 7 / 8;
+        }
+        
+        .vert-um, .quad-um{
+            grid-row: 2 / 3;
+            background-color: aqua;
+        }
+        
+        .vert-dois, .quad-dois{
+            grid-row: 3 / 4;
+            background-color: blueviolet;
+        }
+        
+        .vert-um, .vert-dois{
+            grid-column: 1 / 6;
+        }
+        
+        .quad-um, .quad-dois{
+            grid-column: 6 / 8;
+        }
+        
+        .card-1, .card-2, .card-3, .card-4, .card-5{
+            height: 200px;
+            background-color: brown;
+        }
+        
+        .vert-um, .vert-dois, .quad-um, .quad-dois{
+            height: 250px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 5px;
+        }
+        
+    
+    </style>
+    
+
+</head>    
+
+<body>
+    <div class="header-g">
+        <a href="cadastro.html"><img src="images/letra-g-png-6.png"></a>
+    </div>
+    
+            <div class="grid-dash">
+                <div class="card-1">card 1</div> <div class="card-2"> card 2</div> <div class="card-3">card 3</div> <div class="card-4"> card 4</div><div class="card-5">card 5</div>
+                <div class="vert-um"> vert-um</div>
+                <div class="vert-dois">vert-dois</div>
+                <div class="quad-um">quad-um</div>
+                <div class="quad-dois">quad-dois</div>
+            </div>
+          
+        
+    
+    
+</body>
+</html>
